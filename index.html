@@ -1,6 +1,13 @@
 <?php
 
 require_once "blizzard_api/blizzard_api.php";
+BlizzardApi\Config::$apiKey = 'e6ea0ca3adbb46e691dcafc87ed8daeb';
+BlizzardApi\Config::$apiSecret = 'v40DzzrJswGv26jcBLRgwe428VXBi2Qy';
+BlizzardApi\Config::$redirectURI = 'https://canucker267.github.io/wowrecipes/';
+
+BlizzardApi\Config::$accessTokenSessionKey = 'blizzard_api_access_token';
+BlizzardApi\Config::$storeAccessTokenInSession = true;
+
 $apiClient = new BlizzardAPI\Wow\Wow('us');
 $character = $apiClient->character()->get('blades-edge', 'canucker', ['locale'=>'en_US']);
 ?>
