@@ -9,6 +9,6 @@ BlizzardApi\Config::$accessTokenSessionKey = 'blizzard_api_access_token';
 BlizzardApi\Config::$storeAccessTokenInSession = true;
 
 $apiClient = new BlizzardAPI\Wow\Wow('us');
-echo $apiClient
+echo "test"
 $character = $apiClient->character()->get('blades-edge', 'canucker', ['locale'=>'en_US']);
 ?>
